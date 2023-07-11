@@ -18,7 +18,7 @@ function App() {
         font={font}
         setFont={setFont}
       />
-      <SearchBar darkMode={darkMode} setWord={setWord} />
+      <SearchBar darkMode={darkMode} word={word} setWord={setWord} />
     </div>
   );
 }
