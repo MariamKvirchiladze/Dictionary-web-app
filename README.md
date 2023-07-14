@@ -1,7 +1,7 @@
 # Dictionary-web-app
 # Frontend Mentor - Dictionary web app solution
 
-This is a solution to the [Dictionary web app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/dictionary-web-app-h5wwnyuKFL). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Dictionary web app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/dictionary-web-app-h5wwnyuKFL). 
 
 ## Table of contents
 
@@ -13,6 +13,7 @@ This is a solution to the [Dictionary web app challenge on Frontend Mentor](http
 - [Author](#author)
 - 
 ## Overview
+
 
 ### The challenge
 
@@ -26,8 +27,7 @@ Users should be able to:
 - Switch between light and dark themes
 - View the optimal layout for the interface depending on their device's screen size
 - See hover and focus states for all interactive elements on the page
-- **Bonus**: Have the correct color scheme chosen for them based on their computer preferences. _Hint_: Research `prefers-color-scheme` in CSS.
-
+- 
 ### Links
 
 - Solution URL: [Add solution URL here](https://github.com/MariamKvirchiladze/Dictionary-web-app)
