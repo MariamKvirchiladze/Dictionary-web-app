@@ -2,11 +2,13 @@ import { useEffect, useState } from "react";
 import Types from "../../types";
 import OutputError from "./Output-error";
 import OutputSuccess from "./Output-success";
+import Source from "./Source";
 import axios from "axios";
 
 interface outputProps {
   darkMode: boolean;
   word: string;
+  font: number;
   definition: null | Types;
   setDefinition(definition: any): void;
 }
@@ -14,6 +16,7 @@ interface outputProps {
 const Output = ({
   darkMode,
   word,
+  font,
   definition,
   setDefinition,
 }: outputProps): JSX.Element => {
@@ -39,7 +42,12 @@ const Output = ({
     <div className="w-full flex flex-col justify-center items-center">
       {showResult === true ? (
         <div className="flex flex-col gap-[28px] items-center w-full md:gap-10">
-          <OutputSuccess darkMode={darkMode} definition={definition} />
+          <OutputSuccess
+            darkMode={darkMode}
+            definition={definition}
+            font={font}
+          />
+          <Source darkMode={darkMode} definition={definition} />
         </div>
       ) : showResult === false ? (
         <OutputError darkMode={darkMode} />

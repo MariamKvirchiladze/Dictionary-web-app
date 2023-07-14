@@ -28,7 +28,7 @@ const Header = ({
   return (
     <div className="w-full max-w-[375px] flex flex-row justify-between items-center md:max-w-[689px] lg:max-w-[736px]">
       <img
-        className="w-[28.05px] h-[32px] cursor-pointer md:w-[32px] md:h-[36.5px]"
+        className="hover:animate-ping w-[28.05px] h-[32px] cursor-pointer md:w-[32px] md:h-[36.5px]"
         src={logo}
         alt="logo of dictionary"
         onClick={() => window.location.reload()}
@@ -45,7 +45,7 @@ const Header = ({
           >
             {font === 0 ? "Sans-serif" : font === 1 ? "Serif" : "Mono"}
           </h4>
-          <img src={arrow} alt="arrow down" />
+          <img className="hover:animate-bounce" src={arrow} alt="arrow down" />
           <FontMenu setFont={setFont} menu={menu} darkMode={darkMode} />
         </div>
         <div className="w-[1px] h-[32px] bg-[#E9E9E9]"></div>
@@ -63,7 +63,11 @@ const Header = ({
             <span className="absolute cursor-pointer inset-0 rounded-[10px] bg-gray dark:bg-purple before:absolute before:content-[''] before:h-[14px] before:w-[14px] before:rounded-full before:left-[3px] before:bottom-[3px] before:bg-white peer-focus-visible:bg-violet-500 peer-checked:before:translate-x-[20px] before:transition-all"></span>
           </label>
         </div>
-        <img src={darkMode ? moonDark : moonLight} alt="moon" />
+        <img
+          className="hover:animate-spin cursor-pointer"
+          src={darkMode ? moonDark : moonLight}
+          alt="moon"
+        />
       </div>
     </div>
   );

@@ -3,10 +3,9 @@ import searchIcon from "../../assets/images/icon-search.svg";
 
 interface searchProps {
   darkMode: boolean;
-  word: string;
   setWord(word: string): void;
 }
-const SearchBar = ({ darkMode, setWord, word }: searchProps): JSX.Element => {
+const SearchBar = ({ darkMode, setWord }: searchProps): JSX.Element => {
   const [errorMessage, setErrorMessage] = useState(false);
   const checkInput = (e: any) => {
     e.preventDefault();
@@ -48,7 +47,6 @@ const SearchBar = ({ darkMode, setWord, word }: searchProps): JSX.Element => {
       >
         Whoops, can’t be empty…
       </p>
-      <p className="hidden">{word}</p>
     </div>
   );
 };

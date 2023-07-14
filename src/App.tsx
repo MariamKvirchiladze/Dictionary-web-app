@@ -21,10 +21,11 @@ function App() {
         font={font}
         setFont={setFont}
       />
-      <SearchBar darkMode={darkMode} word={word} setWord={setWord} />
+      <SearchBar darkMode={darkMode} setWord={setWord} />
       <Output
         darkMode={darkMode}
         word={word}
+        font={font}
         definition={definition}
         setDefinition={setDefinition}
       />
